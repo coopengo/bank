@@ -4,240 +4,254 @@ msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "error:bank.account.number:"
 msgid "Invalid IBAN \"%s\"."
-msgstr "IBAN invalide « %s »."
+msgstr ""
 
 msgctxt "field:bank,bic:"
 msgid "BIC"
-msgstr "BIC"
+msgstr ""
 
+#, fuzzy
 msgctxt "field:bank,create_date:"
 msgid "Create Date"
-msgstr "Date de création"
+msgstr "Дата создания"
 
+#, fuzzy
 msgctxt "field:bank,create_uid:"
 msgid "Create User"
-msgstr "Créé par"
+msgstr "Создано пользователем"
 
+#, fuzzy
 msgctxt "field:bank,id:"
 msgid "ID"
 msgstr "ID"
 
+#, fuzzy
 msgctxt "field:bank,party:"
 msgid "Party"
-msgstr "Tiers"
+msgstr "Организации"
 
+#, fuzzy
 msgctxt "field:bank,rec_name:"
 msgid "Name"
-msgstr "Nom"
+msgstr "Правило оплаты"
 
+#, fuzzy
 msgctxt "field:bank,write_date:"
 msgid "Write Date"
-msgstr "Date de mise à jour"
+msgstr "Дата изменения"
 
+#, fuzzy
 msgctxt "field:bank,write_uid:"
 msgid "Write User"
-msgstr "Mis à jour par"
+msgstr "Изменено пользователем"
 
+#, fuzzy
 msgctxt "field:bank.account,active:"
 msgid "Active"
-msgstr "Actif"
+msgstr "Действующий"
 
 msgctxt "field:bank.account,bank:"
 msgid "Bank"
-msgstr "Banque"
+msgstr ""
 
+#, fuzzy
 msgctxt "field:bank.account,create_date:"
 msgid "Create Date"
-msgstr "Date de création"
+msgstr "Дата создания"
 
+#, fuzzy
 msgctxt "field:bank.account,create_uid:"
 msgid "Create User"
-msgstr "Créé par"
+msgstr "Создано пользователем"
 
+#, fuzzy
 msgctxt "field:bank.account,currency:"
 msgid "Currency"
-msgstr "Devise"
+msgstr "Валюты"
 
+#, fuzzy
 msgctxt "field:bank.account,id:"
 msgid "ID"
 msgstr "ID"
 
+#, fuzzy
 msgctxt "field:bank.account,numbers:"
 msgid "Numbers"
-msgstr "Numéros"
+msgstr "Номер"
 
+#, fuzzy
 msgctxt "field:bank.account,owners:"
 msgid "Owners"
-msgstr "Propriétaires"
+msgstr "Владелец"
 
+#, fuzzy
 msgctxt "field:bank.account,rec_name:"
 msgid "Name"
-msgstr "Nom"
+msgstr "Правило оплаты"
 
+#, fuzzy
 msgctxt "field:bank.account,write_date:"
 msgid "Write Date"
-msgstr "Date de mise à jour"
+msgstr "Дата изменения"
 
+#, fuzzy
 msgctxt "field:bank.account,write_uid:"
 msgid "Write User"
-msgstr "Mis à jour par"
+msgstr "Изменено пользователем"
 
+#, fuzzy
 msgctxt "field:bank.account-party.party,account:"
 msgid "Account"
-msgstr "Compte"
+msgstr "Счет"
 
+#, fuzzy
 msgctxt "field:bank.account-party.party,create_date:"
 msgid "Create Date"
-msgstr "Date de création"
+msgstr "Дата создания"
 
+#, fuzzy
 msgctxt "field:bank.account-party.party,create_uid:"
 msgid "Create User"
-msgstr "Créé par"
+msgstr "Создано пользователем"
 
+#, fuzzy
 msgctxt "field:bank.account-party.party,id:"
 msgid "ID"
 msgstr "ID"
 
+#, fuzzy
 msgctxt "field:bank.account-party.party,owner:"
 msgid "Owner"
-msgstr "Propriétaire"
+msgstr "Владелец"
 
+#, fuzzy
 msgctxt "field:bank.account-party.party,rec_name:"
 msgid "Name"
-msgstr "Nom"
+msgstr "Правило оплаты"
 
+#, fuzzy
 msgctxt "field:bank.account-party.party,write_date:"
 msgid "Write Date"
-msgstr "Date de mise à jour"
+msgstr "Дата изменения"
 
+#, fuzzy
 msgctxt "field:bank.account-party.party,write_uid:"
 msgid "Write User"
-msgstr "Mis à jour par"
+msgstr "Изменено пользователем"
 
+#, fuzzy
 msgctxt "field:bank.account.number,account:"
 msgid "Account"
-msgstr "Compte"
+msgstr "Счет"
 
+#, fuzzy
 msgctxt "field:bank.account.number,create_date:"
 msgid "Create Date"
-msgstr "Date de création"
+msgstr "Дата создания"
 
+#, fuzzy
 msgctxt "field:bank.account.number,create_uid:"
 msgid "Create User"
-msgstr "Créé par"
+msgstr "Создано пользователем"
 
+#, fuzzy
 msgctxt "field:bank.account.number,id:"
 msgid "ID"
 msgstr "ID"
 
+#, fuzzy
 msgctxt "field:bank.account.number,number:"
 msgid "Number"
-msgstr "Numéro"
+msgstr "Номер"
 
 msgctxt "field:bank.account.number,number_compact:"
 msgid "Number Compact"
-msgstr "Numéro compact"
+msgstr ""
 
+#, fuzzy
 msgctxt "field:bank.account.number,rec_name:"
 msgid "Name"
-msgstr "Nom"
+msgstr "Правило оплаты"
 
+#, fuzzy
 msgctxt "field:bank.account.number,sequence:"
 msgid "Sequence"
-msgstr "Séquence"
+msgstr "Последовательность"
 
+#, fuzzy
 msgctxt "field:bank.account.number,type:"
 msgid "Type"
-msgstr "Type"
+msgstr "Тип"
 
+#, fuzzy
 msgctxt "field:bank.account.number,write_date:"
 msgid "Write Date"
-msgstr "Date de mise à jour"
+msgstr "Дата изменения"
 
+#, fuzzy
 msgctxt "field:bank.account.number,write_uid:"
 msgid "Write User"
-msgstr "Mis à jour par"
+msgstr "Изменено пользователем"
 
 msgctxt "field:party.party,bank_accounts:"
 msgid "Bank Accounts"
-msgstr "Comptes bancaires"
+msgstr ""
 
 msgctxt "help:bank,bic:"
 msgid "Bank/Business Identifier Code"
-msgstr "Code d'identification des banques"
+msgstr ""
 
 msgctxt "model:bank,name:"
 msgid "Bank"
-msgstr "Banque"
+msgstr ""
 
 msgctxt "model:bank.account,name:"
 msgid "Bank Account"
-msgstr "Compte bancaire"
+msgstr ""
 
 msgctxt "model:bank.account-party.party,name:"
 msgid "Bank Account - Party"
-msgstr "Compte bancaire - Tiers"
+msgstr ""
 
 msgctxt "model:bank.account.number,name:"
 msgid "Bank Account Number"
-msgstr "Numéro de compte bancaire"
+msgstr ""
 
+#, fuzzy
 msgctxt "model:ir.action,name:act_bank_account_form"
 msgid "Accounts"
-msgstr "Comptes"
+msgstr "Счета в виде дерева"
 
 msgctxt "model:ir.action,name:act_bank_form"
 msgid "Banks"
-msgstr "Banques"
+msgstr ""
 
+#, fuzzy
 msgctxt "model:ir.ui.menu,name:menu_bank_account_form"
 msgid "Accounts"
-msgstr "Comptes"
+msgstr "Счета в виде дерева"
 
 msgctxt "model:ir.ui.menu,name:menu_bank_form"
 msgid "Banks"
-msgstr "Banques"
+msgstr ""
 
 msgctxt "model:ir.ui.menu,name:menu_banking"
 msgid "Banking"
-msgstr "Banque"
+msgstr ""
 
 msgctxt "model:res.group,name:group_bank_admin"
 msgid "Bank Administration"
-msgstr "Administration des banques"
+msgstr ""
 
 msgctxt "selection:bank.account.number,type:"
 msgid "IBAN"
-msgstr "IBAN"
+msgstr ""
 
+#, fuzzy
 msgctxt "selection:bank.account.number,type:"
 msgid "Other"
-msgstr "Autre"
-
-msgctxt "view:bank.account.number:"
-msgid "Bank Account Number"
-msgstr "Numéro de compte bancaire"
-
-msgctxt "view:bank.account.number:"
-msgid "Bank Account Numbers"
-msgstr "Numéros de compte bancaire"
-
-msgctxt "view:bank.account:"
-msgid "Bank Account"
-msgstr "Compte bancaire"
-
-msgctxt "view:bank.account:"
-msgid "Bank Accounts"
-msgstr "Comptes bancaires"
-
-msgctxt "view:bank:"
-msgid "Bank"
-msgstr "Banque"
-
-msgctxt "view:bank:"
-msgid "Banks"
-msgstr "Banques"
+msgstr "Прочий"
 
 msgctxt "view:party.party:"
 msgid "Banking"
-msgstr "Banque"
+msgstr ""

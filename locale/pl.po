@@ -4,7 +4,7 @@ msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "error:bank.account.number:"
 msgid "Invalid IBAN \"%s\"."
-msgstr "Neveljaven IBAN \"%s\""
+msgstr "Nieprawidłowy IBAN \"%s\"."
 
 msgctxt "field:bank,bic:"
 msgid "BIC"
@@ -12,11 +12,11 @@ msgstr "BIC"
 
 msgctxt "field:bank,create_date:"
 msgid "Create Date"
-msgstr "Izdelano"
+msgstr "Data utworzenia"
 
 msgctxt "field:bank,create_uid:"
 msgid "Create User"
-msgstr "Izdelal"
+msgstr "Utworzył"
 
 msgctxt "field:bank,id:"
 msgid "ID"
@@ -24,39 +24,39 @@ msgstr "ID"
 
 msgctxt "field:bank,party:"
 msgid "Party"
-msgstr "Partner"
+msgstr "Strona"
 
 msgctxt "field:bank,rec_name:"
 msgid "Name"
-msgstr "Ime"
+msgstr "Nazwa"
 
 msgctxt "field:bank,write_date:"
 msgid "Write Date"
-msgstr "Zapisano"
+msgstr "Data zapisu"
 
 msgctxt "field:bank,write_uid:"
 msgid "Write User"
-msgstr "Zapisal"
+msgstr "Zapisał"
 
 msgctxt "field:bank.account,active:"
 msgid "Active"
-msgstr "Aktivno"
+msgstr "Aktywny"
 
 msgctxt "field:bank.account,bank:"
 msgid "Bank"
-msgstr "Banka"
+msgstr "Bank"
 
 msgctxt "field:bank.account,create_date:"
 msgid "Create Date"
-msgstr "Izdelano"
+msgstr "Data utworzenia"
 
 msgctxt "field:bank.account,create_uid:"
 msgid "Create User"
-msgstr "Izdelal"
+msgstr "Utworzył"
 
 msgctxt "field:bank.account,currency:"
 msgid "Currency"
-msgstr "Valuta"
+msgstr "Waluta"
 
 msgctxt "field:bank.account,id:"
 msgid "ID"
@@ -64,35 +64,35 @@ msgstr "ID"
 
 msgctxt "field:bank.account,numbers:"
 msgid "Numbers"
-msgstr "Računi"
+msgstr "Numery"
 
 msgctxt "field:bank.account,owners:"
 msgid "Owners"
-msgstr "Imetniki"
+msgstr "Właściciele"
 
 msgctxt "field:bank.account,rec_name:"
 msgid "Name"
-msgstr "Ime"
+msgstr "Nazwa"
 
 msgctxt "field:bank.account,write_date:"
 msgid "Write Date"
-msgstr "Zapisano"
+msgstr "Data zapisu"
 
 msgctxt "field:bank.account,write_uid:"
 msgid "Write User"
-msgstr "Zapisal"
+msgstr "Zapisał"
 
 msgctxt "field:bank.account-party.party,account:"
 msgid "Account"
-msgstr "Bančni račun"
+msgstr "Konto"
 
 msgctxt "field:bank.account-party.party,create_date:"
 msgid "Create Date"
-msgstr "Izdelano"
+msgstr "Data utworzenia"
 
 msgctxt "field:bank.account-party.party,create_uid:"
 msgid "Create User"
-msgstr "Izdelal"
+msgstr "Utworzył"
 
 msgctxt "field:bank.account-party.party,id:"
 msgid "ID"
@@ -100,31 +100,31 @@ msgstr "ID"
 
 msgctxt "field:bank.account-party.party,owner:"
 msgid "Owner"
-msgstr "Imetnik"
+msgstr "Właściciel"
 
 msgctxt "field:bank.account-party.party,rec_name:"
 msgid "Name"
-msgstr "Ime"
+msgstr "Nazwa"
 
 msgctxt "field:bank.account-party.party,write_date:"
 msgid "Write Date"
-msgstr "Zapisano"
+msgstr "Data zapisu"
 
 msgctxt "field:bank.account-party.party,write_uid:"
 msgid "Write User"
-msgstr "Zapisal"
+msgstr "Zapisał"
 
 msgctxt "field:bank.account.number,account:"
 msgid "Account"
-msgstr "Bančni račun"
+msgstr "Konto"
 
 msgctxt "field:bank.account.number,create_date:"
 msgid "Create Date"
-msgstr "Izdelano"
+msgstr "Data utworzenia"
 
 msgctxt "field:bank.account.number,create_uid:"
 msgid "Create User"
-msgstr "Izdelal"
+msgstr "Utworzył"
 
 msgctxt "field:bank.account.number,id:"
 msgid "ID"
@@ -132,79 +132,79 @@ msgstr "ID"
 
 msgctxt "field:bank.account.number,number:"
 msgid "Number"
-msgstr "Številka"
+msgstr "Numer"
 
 msgctxt "field:bank.account.number,number_compact:"
 msgid "Number Compact"
-msgstr "Račun skrčeno"
+msgstr "Numer kompaktowy"
 
 msgctxt "field:bank.account.number,rec_name:"
 msgid "Name"
-msgstr "Ime"
+msgstr "Nazwa"
 
 msgctxt "field:bank.account.number,sequence:"
 msgid "Sequence"
-msgstr "Zap.št."
+msgstr "Kolejność"
 
 msgctxt "field:bank.account.number,type:"
 msgid "Type"
-msgstr "Tip"
+msgstr "Typ"
 
 msgctxt "field:bank.account.number,write_date:"
 msgid "Write Date"
-msgstr "Zapisano"
+msgstr "Data zapisu"
 
 msgctxt "field:bank.account.number,write_uid:"
 msgid "Write User"
-msgstr "Zapisal"
+msgstr "Zapisał"
 
 msgctxt "field:party.party,bank_accounts:"
 msgid "Bank Accounts"
-msgstr "Bančni računi"
+msgstr "Konta bankowe"
 
 msgctxt "help:bank,bic:"
 msgid "Bank/Business Identifier Code"
-msgstr "Bančna/poslovna identifikacijska šifra"
+msgstr "Bankowy/biznesowy kod identyfikacyjny"
 
 msgctxt "model:bank,name:"
 msgid "Bank"
-msgstr "Banka"
+msgstr "Bank"
 
 msgctxt "model:bank.account,name:"
 msgid "Bank Account"
-msgstr "Bančni račun"
+msgstr "Konto bankowe"
 
 msgctxt "model:bank.account-party.party,name:"
 msgid "Bank Account - Party"
-msgstr "Bančni račun - Partner"
+msgstr "Konto bankowe - Strona"
 
 msgctxt "model:bank.account.number,name:"
 msgid "Bank Account Number"
-msgstr "Številka bančnega računa"
+msgstr "Numer konta bankowego"
 
 msgctxt "model:ir.action,name:act_bank_account_form"
 msgid "Accounts"
-msgstr "Bančni računi"
+msgstr "Konta"
 
 msgctxt "model:ir.action,name:act_bank_form"
 msgid "Banks"
-msgstr "Banke"
+msgstr "Banki"
 
 msgctxt "model:ir.ui.menu,name:menu_bank_account_form"
 msgid "Accounts"
-msgstr "Bančni računi"
+msgstr "Konta"
 
 msgctxt "model:ir.ui.menu,name:menu_bank_form"
 msgid "Banks"
-msgstr "Banke"
+msgstr "Banki"
 
 msgctxt "model:ir.ui.menu,name:menu_banking"
 msgid "Banking"
-msgstr "Bančništvo"
+msgstr "Bankowość"
 
 msgctxt "model:res.group,name:group_bank_admin"
 msgid "Bank Administration"
-msgstr "Bančništvo - vodenje"
+msgstr "Administracja ustawieniami banku"
 
 msgctxt "selection:bank.account.number,type:"
 msgid "IBAN"
@@ -212,32 +212,8 @@ msgstr "IBAN"
 
 msgctxt "selection:bank.account.number,type:"
 msgid "Other"
-msgstr "Drugo"
-
-msgctxt "view:bank.account.number:"
-msgid "Bank Account Number"
-msgstr "Številka bančnega računa"
-
-msgctxt "view:bank.account.number:"
-msgid "Bank Account Numbers"
-msgstr "Številke bančnih računov"
-
-msgctxt "view:bank.account:"
-msgid "Bank Account"
-msgstr "Bančni račun"
-
-msgctxt "view:bank.account:"
-msgid "Bank Accounts"
-msgstr "Banćni računi"
-
-msgctxt "view:bank:"
-msgid "Bank"
-msgstr "Banka"
-
-msgctxt "view:bank:"
-msgid "Banks"
-msgstr "Banke"
+msgstr "Inne"
 
 msgctxt "view:party.party:"
 msgid "Banking"
-msgstr "Bančništvo"
+msgstr "Bankowość"

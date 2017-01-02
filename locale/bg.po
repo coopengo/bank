@@ -13,12 +13,12 @@ msgstr ""
 #, fuzzy
 msgctxt "field:bank,create_date:"
 msgid "Create Date"
-msgstr "Дата создания"
+msgstr "Създадено на"
 
 #, fuzzy
 msgctxt "field:bank,create_uid:"
 msgid "Create User"
-msgstr "Создано пользователем"
+msgstr "Създадено от"
 
 #, fuzzy
 msgctxt "field:bank,id:"
@@ -28,27 +28,27 @@ msgstr "ID"
 #, fuzzy
 msgctxt "field:bank,party:"
 msgid "Party"
-msgstr "Организации"
+msgstr "Управление на партньор"
 
 #, fuzzy
 msgctxt "field:bank,rec_name:"
 msgid "Name"
-msgstr "Правило оплаты"
+msgstr "Условие за плащане"
 
 #, fuzzy
 msgctxt "field:bank,write_date:"
 msgid "Write Date"
-msgstr "Дата изменения"
+msgstr "Променено на"
 
 #, fuzzy
 msgctxt "field:bank,write_uid:"
 msgid "Write User"
-msgstr "Изменено пользователем"
+msgstr "Променено от"
 
 #, fuzzy
 msgctxt "field:bank.account,active:"
 msgid "Active"
-msgstr "Действующий"
+msgstr "Активен"
 
 msgctxt "field:bank.account,bank:"
 msgid "Bank"
@@ -57,17 +57,17 @@ msgstr ""
 #, fuzzy
 msgctxt "field:bank.account,create_date:"
 msgid "Create Date"
-msgstr "Дата создания"
+msgstr "Създадено на"
 
 #, fuzzy
 msgctxt "field:bank.account,create_uid:"
 msgid "Create User"
-msgstr "Создано пользователем"
+msgstr "Създадено от"
 
 #, fuzzy
 msgctxt "field:bank.account,currency:"
 msgid "Currency"
-msgstr "Валюты"
+msgstr "Управление на валути"
 
 #, fuzzy
 msgctxt "field:bank.account,id:"
@@ -82,37 +82,37 @@ msgstr "Номер"
 #, fuzzy
 msgctxt "field:bank.account,owners:"
 msgid "Owners"
-msgstr "Владелец"
+msgstr "Собственик"
 
 #, fuzzy
 msgctxt "field:bank.account,rec_name:"
 msgid "Name"
-msgstr "Правило оплаты"
+msgstr "Условие за плащане"
 
 #, fuzzy
 msgctxt "field:bank.account,write_date:"
 msgid "Write Date"
-msgstr "Дата изменения"
+msgstr "Променено на"
 
 #, fuzzy
 msgctxt "field:bank.account,write_uid:"
 msgid "Write User"
-msgstr "Изменено пользователем"
+msgstr "Променено от"
 
 #, fuzzy
 msgctxt "field:bank.account-party.party,account:"
 msgid "Account"
-msgstr "Счет"
+msgstr "Фактури"
 
 #, fuzzy
 msgctxt "field:bank.account-party.party,create_date:"
 msgid "Create Date"
-msgstr "Дата создания"
+msgstr "Създадено на"
 
 #, fuzzy
 msgctxt "field:bank.account-party.party,create_uid:"
 msgid "Create User"
-msgstr "Создано пользователем"
+msgstr "Създадено от"
 
 #, fuzzy
 msgctxt "field:bank.account-party.party,id:"
@@ -122,37 +122,37 @@ msgstr "ID"
 #, fuzzy
 msgctxt "field:bank.account-party.party,owner:"
 msgid "Owner"
-msgstr "Владелец"
+msgstr "Собственик"
 
 #, fuzzy
 msgctxt "field:bank.account-party.party,rec_name:"
 msgid "Name"
-msgstr "Правило оплаты"
+msgstr "Условие за плащане"
 
 #, fuzzy
 msgctxt "field:bank.account-party.party,write_date:"
 msgid "Write Date"
-msgstr "Дата изменения"
+msgstr "Променено на"
 
 #, fuzzy
 msgctxt "field:bank.account-party.party,write_uid:"
 msgid "Write User"
-msgstr "Изменено пользователем"
+msgstr "Променено от"
 
 #, fuzzy
 msgctxt "field:bank.account.number,account:"
 msgid "Account"
-msgstr "Счет"
+msgstr "Фактури"
 
 #, fuzzy
 msgctxt "field:bank.account.number,create_date:"
 msgid "Create Date"
-msgstr "Дата создания"
+msgstr "Създадено на"
 
 #, fuzzy
 msgctxt "field:bank.account.number,create_uid:"
 msgid "Create User"
-msgstr "Создано пользователем"
+msgstr "Създадено от"
 
 #, fuzzy
 msgctxt "field:bank.account.number,id:"
@@ -171,27 +171,27 @@ msgstr ""
 #, fuzzy
 msgctxt "field:bank.account.number,rec_name:"
 msgid "Name"
-msgstr "Правило оплаты"
+msgstr "Условие за плащане"
 
 #, fuzzy
 msgctxt "field:bank.account.number,sequence:"
 msgid "Sequence"
-msgstr "Последовательность"
+msgstr "Последователност"
 
 #, fuzzy
 msgctxt "field:bank.account.number,type:"
 msgid "Type"
-msgstr "Тип"
+msgstr "Вид"
 
 #, fuzzy
 msgctxt "field:bank.account.number,write_date:"
 msgid "Write Date"
-msgstr "Дата изменения"
+msgstr "Променено на"
 
 #, fuzzy
 msgctxt "field:bank.account.number,write_uid:"
 msgid "Write User"
-msgstr "Изменено пользователем"
+msgstr "Променено от"
 
 msgctxt "field:party.party,bank_accounts:"
 msgid "Bank Accounts"
@@ -220,7 +220,7 @@ msgstr ""
 #, fuzzy
 msgctxt "model:ir.action,name:act_bank_account_form"
 msgid "Accounts"
-msgstr "Счета в виде дерева"
+msgstr "Сметки"
 
 msgctxt "model:ir.action,name:act_bank_form"
 msgid "Banks"
@@ -229,7 +229,7 @@ msgstr ""
 #, fuzzy
 msgctxt "model:ir.ui.menu,name:menu_bank_account_form"
 msgid "Accounts"
-msgstr "Счета в виде дерева"
+msgstr "Сметки"
 
 msgctxt "model:ir.ui.menu,name:menu_bank_form"
 msgid "Banks"
@@ -250,31 +250,7 @@ msgstr ""
 #, fuzzy
 msgctxt "selection:bank.account.number,type:"
 msgid "Other"
-msgstr "Прочий"
-
-msgctxt "view:bank.account.number:"
-msgid "Bank Account Number"
-msgstr ""
-
-msgctxt "view:bank.account.number:"
-msgid "Bank Account Numbers"
-msgstr ""
-
-msgctxt "view:bank.account:"
-msgid "Bank Account"
-msgstr ""
-
-msgctxt "view:bank.account:"
-msgid "Bank Accounts"
-msgstr ""
-
-msgctxt "view:bank:"
-msgid "Bank"
-msgstr ""
-
-msgctxt "view:bank:"
-msgid "Banks"
-msgstr ""
+msgstr "Друг"
 
 msgctxt "view:party.party:"
 msgid "Banking"
