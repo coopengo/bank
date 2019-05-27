@@ -2,239 +2,262 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "error:bank.account.number:"
-msgid "Invalid IBAN \"%s\"."
-msgstr ""
-
 msgctxt "field:bank,bic:"
 msgid "BIC"
-msgstr ""
+msgstr "BIC"
 
 msgctxt "field:bank,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Data de criação"
 
 msgctxt "field:bank,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Criado pelo usuário"
 
 msgctxt "field:bank,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:bank,party:"
 msgid "Party"
-msgstr ""
+msgstr "Parceiro"
 
 msgctxt "field:bank,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nome do Registro"
 
 msgctxt "field:bank,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Data de gravação"
 
 msgctxt "field:bank,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Gravado pelo usuário"
 
 msgctxt "field:bank.account,active:"
 msgid "Active"
-msgstr ""
+msgstr "Ativo"
 
-#, fuzzy
 msgctxt "field:bank.account,bank:"
 msgid "Bank"
-msgstr "Banks"
+msgstr "Banco"
 
 msgctxt "field:bank.account,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Data de criação"
 
 msgctxt "field:bank.account,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Criado pelo usuário"
 
 msgctxt "field:bank.account,currency:"
 msgid "Currency"
-msgstr ""
+msgstr "Moeda"
 
 msgctxt "field:bank.account,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:bank.account,numbers:"
 msgid "Numbers"
-msgstr ""
+msgstr "Números"
 
 msgctxt "field:bank.account,owners:"
 msgid "Owners"
-msgstr ""
+msgstr "Proprietários"
 
 msgctxt "field:bank.account,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nome do Registro"
 
 msgctxt "field:bank.account,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Data de gravação"
 
 msgctxt "field:bank.account,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Gravado pelo usuário"
 
-#, fuzzy
 msgctxt "field:bank.account-party.party,account:"
 msgid "Account"
-msgstr "Accounts"
+msgstr "Contas"
 
 msgctxt "field:bank.account-party.party,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Data de criação"
 
 msgctxt "field:bank.account-party.party,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Criado pelo usuário"
 
 msgctxt "field:bank.account-party.party,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:bank.account-party.party,owner:"
 msgid "Owner"
-msgstr ""
+msgstr "Proprietário"
 
 msgctxt "field:bank.account-party.party,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nome do Registro"
 
 msgctxt "field:bank.account-party.party,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Data de gravação"
 
 msgctxt "field:bank.account-party.party,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Gravado pelo usuário"
 
-#, fuzzy
 msgctxt "field:bank.account.number,account:"
 msgid "Account"
-msgstr "Accounts"
+msgstr "Contas"
 
 msgctxt "field:bank.account.number,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Data de criação"
 
 msgctxt "field:bank.account.number,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Criado pelo usuário"
 
 msgctxt "field:bank.account.number,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:bank.account.number,number:"
 msgid "Number"
-msgstr ""
+msgstr "Numero"
 
 msgctxt "field:bank.account.number,number_compact:"
 msgid "Number Compact"
-msgstr ""
+msgstr "Número Compacto"
 
 msgctxt "field:bank.account.number,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nome do Registro"
 
 msgctxt "field:bank.account.number,sequence:"
 msgid "Sequence"
-msgstr ""
+msgstr "Sequência"
 
 msgctxt "field:bank.account.number,type:"
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 msgctxt "field:bank.account.number,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Data de gravação"
 
 msgctxt "field:bank.account.number,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Gravado pelo usuário"
 
 msgctxt "field:party.party,bank_accounts:"
 msgid "Bank Accounts"
-msgstr ""
+msgstr "Contas Bancárias"
 
 msgctxt "help:bank,bic:"
 msgid "Bank/Business Identifier Code."
-msgstr ""
+msgstr "Código Identificador do Banco/Negócio."
 
 msgctxt "help:bank.account,active:"
 msgid "Uncheck to exclude from future use."
-msgstr ""
+msgstr "Desmarque para não usar futuramente."
 
 msgctxt "help:bank.account,bank:"
 msgid "The bank where the account is open."
-msgstr ""
+msgstr "O banco em que a conta foi aberta."
 
 msgctxt "help:bank.account,numbers:"
 msgid "Add the numbers which identify the bank account."
-msgstr ""
+msgstr "Adicione os números que identificam a conta bancária."
 
 msgctxt "help:bank.account.number,account:"
 msgid "The bank account which is identified by the number."
-msgstr ""
+msgstr "A conta bancária a qual é identificada pelo número."
 
-#, fuzzy
 msgctxt "model:bank,name:"
 msgid "Bank"
-msgstr "Banks"
+msgstr "Banco"
 
 msgctxt "model:bank.account,name:"
 msgid "Bank Account"
-msgstr ""
+msgstr "Conta Bancária"
 
 msgctxt "model:bank.account-party.party,name:"
 msgid "Bank Account - Party"
-msgstr ""
+msgstr "Conta Bancária - Pessoa"
 
 msgctxt "model:bank.account.number,name:"
 msgid "Bank Account Number"
-msgstr ""
+msgstr "Número da Conta Bancária"
 
 msgctxt "model:ir.action,name:act_bank_account_form"
 msgid "Accounts"
-msgstr "Accounts"
+msgstr "Contas"
 
 msgctxt "model:ir.action,name:act_bank_form"
 msgid "Banks"
-msgstr "Banks"
+msgstr "Bancos"
+
+msgctxt "model:ir.message,text:msg_invalid_iban"
+msgid "IBAN number \"%(number)s\" is not valid."
+msgstr "O número IBAN  \"%(number)s\" não é válido."
 
 msgctxt "model:ir.ui.menu,name:menu_bank_account_form"
 msgid "Accounts"
-msgstr "Accounts"
+msgstr "Contas"
 
 msgctxt "model:ir.ui.menu,name:menu_bank_form"
 msgid "Banks"
-msgstr "Banks"
+msgstr "Bancos"
 
 msgctxt "model:ir.ui.menu,name:menu_banking"
 msgid "Banking"
-msgstr "Banking"
+msgstr "Banco"
 
 msgctxt "model:res.group,name:group_bank_admin"
 msgid "Bank Administration"
-msgstr "Bank Administration"
+msgstr "Administração Bancária"
 
 msgctxt "selection:bank.account.number,type:"
 msgid "IBAN"
-msgstr ""
+msgstr "IBAN"
 
 msgctxt "selection:bank.account.number,type:"
 msgid "Other"
-msgstr ""
+msgstr "Nefropatia hereditária năo classificada em outra parte - outras"
 
-#, fuzzy
 msgctxt "view:party.party:"
 msgid "Banking"
-msgstr "Banking"
+msgstr "Banco"
+
+msgctxt "help:bank.account,active:"
+msgid "Uncheck to exclude the bank account from future use."
+msgstr "Desmarque para remover a conta bancária de uso futuro."
+
+msgctxt "view:bank.account.number:"
+msgid "Bank Account Number"
+msgstr "Número da Conta Bancária"
+
+msgctxt "view:bank.account.number:"
+msgid "Bank Account Numbers"
+msgstr "Números da conta bancária"
+
+msgctxt "view:bank.account:"
+msgid "Bank Account"
+msgstr "Conta Bancária"
+
+msgctxt "view:bank.account:"
+msgid "Bank Accounts"
+msgstr "Contas Bancárias"
+
+msgctxt "view:bank:"
+msgid "Bank"
+msgstr "Banco"
+
+msgctxt "view:bank:"
+msgid "Banks"
+msgstr "Bancos"
