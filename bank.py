@@ -1,16 +1,14 @@
 # This file is part of Tryton.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
-from stdnum import iban
+from stdnum import iban, bic
+import stdnum.exceptions
 from sql import operators, Literal
 
 from trytond.i18n import gettext
 from trytond.model import (
     ModelView, ModelSQL, DeactivableMixin, fields, sequence_ordered)
 
-from .exceptions import IBANValidationError
-
-
-__all__ = ['Bank', 'BankAccount', 'BankAccountNumber', 'BankAccountParty']
+from .exceptions import IBANValidationError, InvalidBIC
 
 
 class Bank(ModelSQL, ModelView):
@@ -27,8 +25,25 @@ class Bank(ModelSQL, ModelView):
     def search_rec_name(cls, name, clause):
         return [('party',) + tuple(clause[1:])]
 
+    @fields.depends('bic')
+    def on_change_with_bic(self):
+        try:
+            return bic.compact(self.bic)
+        except stdnum.exceptions.ValidationError:
+            pass
+        return self.bic
 
-class BankAccount(DeactivableMixin, ModelSQL, ModelView):
+    def pre_validate(self):
+        super().pre_validate()
+        self.check_bic()
+
+    @fields.depends('bic')
+    def check_bic(self):
+        if self.bic and not bic.is_valid(self.bic):
+            raise InvalidBIC(gettext('bank.msg_invalid_bic', bic=self.bic))
+
+
+class Account(DeactivableMixin, ModelSQL, ModelView):
     'Bank Account'
     __name__ = 'bank.account'
     bank = fields.Many2One('bank', 'Bank', required=True,
@@ -41,14 +56,25 @@ class BankAccount(DeactivableMixin, ModelSQL, ModelView):
         help="Add the numbers which identify the bank account.")
 
     def get_rec_name(self, name):
-        return self.numbers[0].number
+        name = '%s @ %s' % (self.numbers[0].number, self.bank.rec_name)
+        if self.currency:
+            name += ' [%s]' % self.currency.code
+        return name
 
     @classmethod
     def search_rec_name(cls, name, clause):
-        return [('numbers',) + tuple(clause[1:])]
+        if clause[1].startswith('!') or clause[1].startswith('not '):
+            bool_op = 'AND'
+        else:
+            bool_op = 'OR'
+        return [bool_op,
+            ('bank.rec_name',) + tuple(clause[1:]),
+            ('currency',) + tuple(clause[1:]),
+            ('numbers',) + tuple(clause[1:]),
+            ]
 
 
-class BankAccountNumber(sequence_ordered(), ModelSQL, ModelView):
+class AccountNumber(sequence_ordered(), ModelSQL, ModelView):
     'Bank Account Number'
     __name__ = 'bank.account.number'
     _rec_name = 'number'
@@ -64,7 +90,7 @@ class BankAccountNumber(sequence_ordered(), ModelSQL, ModelView):
 
     @classmethod
     def __setup__(cls):
-        super(BankAccountNumber, cls).__setup__()
+        super().__setup__()
         cls._order.insert(0, ('account', 'ASC'))
 
     @classmethod
@@ -105,7 +131,7 @@ class BankAccountNumber(sequence_ordered(), ModelSQL, ModelView):
             if values.get('type') == 'iban' and 'number' in values:
                 values['number'] = iban.format(values['number'])
                 values['number_compact'] = iban.compact(values['number'])
-        return super(BankAccountNumber, cls).create(vlist)
+        return super().create(vlist)
 
     @classmethod
     def write(cls, *args):
@@ -118,7 +144,7 @@ class BankAccountNumber(sequence_ordered(), ModelSQL, ModelView):
                 values['number_compact'] = iban.compact(values['number'])
             args.extend((numbers, values))
 
-        super(BankAccountNumber, cls).write(*args)
+        super().write(*args)
 
         to_write = []
         for number in sum(args[::2], []):
@@ -136,7 +162,7 @@ class BankAccountNumber(sequence_ordered(), ModelSQL, ModelView):
 
     @fields.depends('type', 'number')
     def pre_validate(self):
-        super(BankAccountNumber, self).pre_validate()
+        super().pre_validate()
         if (self.type == 'iban' and self.number
                 and not iban.is_valid(self.number)):
             raise IBANValidationError(
@@ -144,7 +170,7 @@ class BankAccountNumber(sequence_ordered(), ModelSQL, ModelView):
                     number=self.number))
 
 
-class BankAccountParty(ModelSQL):
+class AccountParty(ModelSQL):
     'Bank Account - Party'
     __name__ = 'bank.account-party.party'
     account = fields.Many2One('bank.account', 'Account',
