@@ -5,9 +5,6 @@ from trytond.model import fields
 from trytond.tools import lstrip_wildcard
 
 
-__all__ = ['Party', 'PartyReplace']
-
-
 class Party(metaclass=PoolMeta):
     __name__ = 'party.party'
     bank_accounts = fields.Many2Many('bank.account-party.party', 'owner',
@@ -25,16 +22,17 @@ class Party(metaclass=PoolMeta):
             code_value = lstrip_wildcard(clause[2])
         return [bool_op,
             domain,
-            ('bank_accounts', clause[1], code_value) + tuple(clause[3:]),
+            ('bank_accounts.numbers',
+                clause[1], code_value) + tuple(clause[3:]),
             ]
 
 
-class PartyReplace(metaclass=PoolMeta):
+class Replace(metaclass=PoolMeta):
     __name__ = 'party.replace'
 
     @classmethod
     def fields_to_replace(cls):
-        return super(PartyReplace, cls).fields_to_replace() + [
+        return super().fields_to_replace() + [
             ('bank', 'party'),
             ('bank.account-party.party', 'owner'),
             ]
