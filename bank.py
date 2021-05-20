@@ -1,7 +1,6 @@
 # This file is part of Tryton.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
 from stdnum import iban, bic
-from trytond import backend
 import stdnum.exceptions
 from sql import operators, Literal
 
@@ -47,7 +46,7 @@ class Bank(ModelSQL, ModelView):
 class Account(DeactivableMixin, ModelSQL, ModelView):
     'Bank Account'
     __name__ = 'bank.account'
-    bank = fields.Many2One('bank', 'Bank',
+    bank = fields.Many2One('bank', 'Bank', required=True,
         help="The bank where the account is open.")
     owners = fields.Many2Many('bank.account-party.party', 'account', 'owner',
         'Owners')
@@ -56,23 +55,20 @@ class Account(DeactivableMixin, ModelSQL, ModelView):
         required=True,
         help="Add the numbers which identify the bank account.")
 
+    @classmethod
+    def __setup__(cls):
+        # The bank field should be not required on bank account in order
+        # to be able to create and migrate bank accounts
+        # without having the bank information
+        # redime 19670
+        super(Account, cls).__setup__()
+        cls.bank.required = False
+
     def get_rec_name(self, name):
-        if self.bank:
-            name = '%s @ %s' % (self.numbers[0].number, self.bank.rec_name)
-        else:
-            name = '%s' % (self.numbers[0].number)
+        name = '%s @ %s' % (self.numbers[0].number, self.bank.rec_name)
         if self.currency:
             name += ' [%s]' % self.currency.code
         return name
-
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.TableHandler
-        if TableHandler.table_exist(cls._table):
-            table = TableHandler(cls, module_name)
-            table.not_null_action('bank', action='remove')
-
-        super(Account, cls).__register__(module_name)
 
     @classmethod
     def search_rec_name(cls, name, clause):
