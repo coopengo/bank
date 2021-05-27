@@ -46,7 +46,7 @@ class BankAccount(DeactivableMixin, ModelSQL, ModelView):
         # to be able to create and migrate bank accounts
         # without having the bank information
         # redime 19670
-        super(Account, cls).__setup__()
+        super(BankAccount, cls).__setup__()
         cls.bank.required = False
 
     def get_rec_name(self, name):
