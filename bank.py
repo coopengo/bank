@@ -23,7 +23,7 @@ class Bank(ModelSQL, ModelView):
 
     @classmethod
     def search_rec_name(cls, name, clause):
-        return [('party',) + tuple(clause[1:])]
+        return [('party.rec_name',) + tuple(clause[1:])]
 
     @fields.depends('bic')
     def on_change_with_bic(self):
@@ -52,7 +52,6 @@ class Account(DeactivableMixin, ModelSQL, ModelView):
         'Owners')
     currency = fields.Many2One('currency.currency', 'Currency')
     numbers = fields.One2Many('bank.account.number', 'account', 'Numbers',
-        required=True,
         help="Add the numbers which identify the bank account.")
 
     @classmethod
@@ -65,7 +64,11 @@ class Account(DeactivableMixin, ModelSQL, ModelView):
         cls.bank.required = False
 
     def get_rec_name(self, name):
-        name = '%s @ %s' % (self.numbers[0].number, self.bank.rec_name)
+        if self.numbers:
+            number = self.numbers[0].number
+        else:
+            number = '(%s)' % self.id
+        name = '%s @ %s' % (number, self.bank.rec_name)
         if self.currency:
             name += ' [%s]' % self.currency.code
         return name
@@ -78,8 +81,8 @@ class Account(DeactivableMixin, ModelSQL, ModelView):
             bool_op = 'OR'
         return [bool_op,
             ('bank.rec_name',) + tuple(clause[1:]),
-            ('currency',) + tuple(clause[1:]),
-            ('numbers',) + tuple(clause[1:]),
+            ('currency.rec_name',) + tuple(clause[1:]),
+            ('numbers.rec_name',) + tuple(clause[1:]),
             ]
 
 
@@ -100,6 +103,7 @@ class AccountNumber(sequence_ordered(), ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super().__setup__()
+        cls.__access__.add('account')
         cls._order.insert(0, ('account', 'ASC'))
 
     @classmethod
