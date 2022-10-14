@@ -199,10 +199,10 @@ class AccountNumber(sequence_ordered(), ModelSQL, ModelView):
         table = cls.__table__()
         # JCA: remove unicity constraint on ibans for multi_portfolios
         cls._sql_constraints += [
-            # ('number_iban_exclude',
-                # Exclude(table, (table.number_compact, Equal),
-                    # where=table.type == 'iban'),
-                # 'bank.msg_number_iban_unique'),
+        #   ('number_iban_exclude',
+        #       Exclude(table, (table.number_compact, Equal),
+        #            where=table.type == 'iban'),
+        #        'bank.msg_number_iban_unique'),
             ('account_iban_exclude',
                 Exclude(table, (table.account, Equal),
                     where=table.type == 'iban'),
