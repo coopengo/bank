@@ -160,12 +160,8 @@ class BankTestCase(ModuleTestCase):
                 Number(type='iban', number="BE67 0682 4952 8887"),
                 ])
 
-        # Tests to ignore after the commit
-        # d9c1c0fc343835ff2ec511791c1f3cf258ef9596
-        # May have to rework on this
-        account.save()
-        # with self.assertRaises(SQLConstraintError):
-        # account.save()
+        with self.assertRaises(SQLConstraintError):
+            account.save()
 
     @with_transaction()
     def test_number_iban_unique(self):
